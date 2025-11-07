@@ -1,0 +1,18 @@
+# Node modules
+node_modules
+
+# Build outputs
+dist
+
+# Git hooks
+.husky
+
+# VSCode settings
+.vscode
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Misc
+*.min.js
