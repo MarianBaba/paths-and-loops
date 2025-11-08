@@ -1,4 +1,4 @@
-import { HashMap } from '@data-structures/HashMap';
+import { HashMap } from '@data-structures/dictionary/HashMap';
 
 describe('HashMap', () => {
   let map: HashMap<string | number | object, number>;

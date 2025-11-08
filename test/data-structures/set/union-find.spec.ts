@@ -1,4 +1,4 @@
-import { UnionFind } from '@data-structures/UnionFind';
+import { UnionFind } from '@data-structures/set/UnionFind';
 
 describe('UnionFind', () => {
   test('elementsAreInitiallySeparate @uf @add', () => {

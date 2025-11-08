@@ -1,4 +1,4 @@
-import { BloomFilter } from '@data-structures/BloomFilter';
+import { BloomFilter } from '@data-structures/set/BloomFilter';
 
 describe('BloomFilter', () => {
   test('addedElementsAreDetected @bloom @add @has', () => {

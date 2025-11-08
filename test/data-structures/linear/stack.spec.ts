@@ -1,5 +1,5 @@
 // test/data-structures/stack.spec.ts
-import { Stack } from '@data-structures/Stack';
+import { Stack } from '@data-structures/linear/Stack';
 
 describe('Stack', () => {
   let s: Stack<number>;

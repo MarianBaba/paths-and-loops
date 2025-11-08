@@ -1,5 +1,5 @@
 // test/data-structures/queue.spec.ts
-import { Queue } from '@data-structures/Queue';
+import { Queue } from '@data-structures/linear/Queue';
 
 describe('Queue', () => {
   let q: Queue<number>;
