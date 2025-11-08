@@ -4,8 +4,6 @@ Welcome to this curated DSA repository, designed not only to showcase classical 
 
 Whether you’re preparing for coding interviews, learning algorithms, or demonstrating SDET skills, this repository combines robust algorithm implementations, data structures, and automated testing best practices in TypeScript.
 
-⸻
-
 📂 Repository Structure
 
 ```
@@ -27,8 +25,6 @@ src/
 test/ # Automated unit tests with Jest
 ```
 
-⸻
-
 ## Features
 
 Algorithms
@@ -46,8 +42,6 @@ Data Structures
 - Graphs: Directed & Undirected Graph implementations
 - Sets & Maps: HashMap, Union-Find, Bloom Filter
 
-⸻
-
 ## 🧪 QA / SDET Twist
 
 • Automated Unit Tests: Each algorithm and data structure comes with extensive test coverage.
@@ -58,20 +52,19 @@ Data Structures
 
 The goal is to merge classic DSA knowledge with modern QA practices, showcasing not only how algorithms work but also how to validate, automate, and benchmark them.
 
-⸻
-
 ### 🚀 Getting Started
 
-````
+```
 git clone <repo-url>
 cd <repo>
 npm install
 npm test
 ```
 
-⸻
+### 📝 Contributing
 
-📝 Contributing 1. Fork the repository 2. Create a new branch for your feature/algorithm 3. Add your implementation in src/algorithms or src/data-structures 4. Write corresponding tests in the test/ folder 5. Submit a pull request
-
-⸻
-````
+- Fork the repository
+- Create a new branch for your feature/algorithm
+- Add your implementation in src/algorithms or src/data-structures
+- Write corresponding tests in the test/ folder
+- Submit a pull request
