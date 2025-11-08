@@ -1,57 +1,58 @@
 {
-	"name": "paths-and-loops",
-	"version": "1.0.0",
-	"description": "**Paths & Loops** is a curated collection of algorithms and data structures with a QA and automation perspective. Implemented in **TypeScript**, this repository focuses on problem-solving patterns and techniques that are directly relevant to **testing, automation, and building scalable systems**.",
-	"scripts": {
-		"test": "jest",
-		"prepare": "husky",
-		"lint": "eslint \"{src,test}/**/*.ts\" --fix"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MarianBaba/paths-and-loops.git"
-	},
-	"lint-staged": {
-		"*.{ts,tsx,js,jsx}": [
-			"eslint --fix",
-			"git add"
-		]
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"type": "module",
-	"bugs": {
-		"url": "https://github.com/MarianBaba/paths-and-loops/issues"
-	},
-	"homepage": "https://github.com/MarianBaba/paths-and-loops#readme",
-	"devDependencies": {
-		"@eslint/js": "^9.39.1",
-		"@types/jest": "^30.0.0",
-		"@types/node": "^24.10.0",
-		"@typescript-eslint/eslint-plugin": "^8.46.3",
-		"@typescript-eslint/parser": "^8.46.3",
-		"benchmark": "^2.1.4",
-		"eslint": "^9.39.1",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-prettier": "^5.5.4",
-		"globals": "^16.5.0",
-		"husky": "^9.1.7",
-		"jest": "^30.2.0",
-		"lint-staged": "^16.2.6",
-		"prettier": "^3.6.2",
-		"ts-jest": "^29.4.5",
-		"ts-node": "^10.9.2",
-		"tsconfig-paths": "^4.2.0",
-		"typedoc": "^0.28.14",
-		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.46.3"
-	},
-	"dependencies": {
-		"chalk": "^5.6.2",
-		"dotenv": "^17.2.3",
-		"jiti": "^2.6.1",
-		"log-symbols": "^7.0.1",
-		"ora": "^9.0.0"
-	}
+  "name": "paths-and-loops",
+  "version": "1.0.0",
+  "description": "**Paths & Loops** is a curated collection of algorithms and data structures with a QA and automation perspective. Implemented in **TypeScript**, this repository focuses on problem-solving patterns and techniques that are directly relevant to **testing, automation, and building scalable systems**.",
+  "scripts": {
+    "test": "jest",
+    "test:tag": "jest --testNamePattern",
+    "prepare": "husky",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianBaba/paths-and-loops.git"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MarianBaba/paths-and-loops/issues"
+  },
+  "homepage": "https://github.com/MarianBaba/paths-and-loops#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "benchmark": "^2.1.4",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typedoc": "^0.28.14",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3",
+    "jiti": "^2.6.1",
+    "log-symbols": "^7.0.1",
+    "ora": "^9.0.0"
+  }
 }
