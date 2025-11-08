@@ -1,4 +1,4 @@
-import { BinarySearchTree } from '@data-structures/BinarySearchTree';
+import { BinarySearchTree } from '@data-structures/tree/BinarySearchTree';
 
 describe('BinarySearchTree', () => {
   test('canInsertAndSearchValues @bst @insert @search', () => {

@@ -1,8 +1,8 @@
-import { LinkedList } from '@data-structures/SinglyLinkedList';
+import { DoublyLinkedList } from '@data-structures/linked-list/DoublyLinkedList';
 
-describe('LinkedList', () => {
-  test('canAddAndRetrieveElements @linkedList @addGet', () => {
-    const list = new LinkedList<number>();
+describe('DoublyLinkedList', () => {
+  test('canAddAndRetrieveElements @doublyLinkedList @addGet', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(10);
     list.add(20);
     list.add(30);
@@ -13,8 +13,8 @@ describe('LinkedList', () => {
     expect(list.get(2)).toBe(30);
   });
 
-  test('canAddFirst @linkedList @addFirst', () => {
-    const list = new LinkedList<number>();
+  test('canAddFirst @doublyLinkedList @addFirst', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.addFirst(0);
 
@@ -23,16 +23,16 @@ describe('LinkedList', () => {
     expect(list.get(1)).toBe(1);
   });
 
-  test('throwsErrorOnGetOutOfBounds @linkedList @get', () => {
-    const list = new LinkedList<number>();
+  test('throwsErrorOnGetOutOfBounds @doublyLinkedList @get', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
 
     expect(() => list.get(-1)).toThrow(RangeError);
     expect(() => list.get(1)).toThrow(RangeError);
   });
 
-  test('canSetValues @linkedList @set', () => {
-    const list = new LinkedList<string>();
+  test('canSetValues @doublyLinkedList @set', () => {
+    const list = new DoublyLinkedList<string>();
     list.add('a');
     list.add('b');
     list.set(1, 'c');
@@ -40,8 +40,8 @@ describe('LinkedList', () => {
     expect(list.get(1)).toBe('c');
   });
 
-  test('canRemoveAtIndex @linkedList @removeAt', () => {
-    const list = new LinkedList<number>();
+  test('canRemoveAtIndex @doublyLinkedList @removeAt', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.add(2);
     list.add(3);
@@ -53,13 +53,13 @@ describe('LinkedList', () => {
     expect(list.get(1)).toBe(3);
   });
 
-  test('removeAtThrowsOnInvalidIndex @linkedList @removeAt', () => {
-    const list = new LinkedList<number>();
+  test('removeAtThrowsOnInvalidIndex @doublyLinkedList @removeAt', () => {
+    const list = new DoublyLinkedList<number>();
     expect(() => list.removeAt(0)).toThrow(RangeError);
   });
 
-  test('canRemoveByValue @linkedList @remove', () => {
-    const list = new LinkedList<number>();
+  test('canRemoveByValue @doublyLinkedList @remove', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.add(2);
     list.add(3);
@@ -73,8 +73,8 @@ describe('LinkedList', () => {
     expect(removeNonExisting).toBe(false);
   });
 
-  test('indexOfAndContainsWork @linkedList @indexOf @contains', () => {
-    const list = new LinkedList<string>();
+  test('indexOfAndContainsWork @doublyLinkedList @indexOf @contains', () => {
+    const list = new DoublyLinkedList<string>();
     list.add('x');
     list.add('y');
 
@@ -84,8 +84,8 @@ describe('LinkedList', () => {
     expect(list.contains('z')).toBe(false);
   });
 
-  test('forEachIteratesCorrectly @linkedList @forEach', () => {
-    const list = new LinkedList<number>();
+  test('forEachIteratesCorrectly @doublyLinkedList @forEach', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.add(2);
     list.add(3);
@@ -96,8 +96,20 @@ describe('LinkedList', () => {
     expect(result).toEqual([1, 3, 5]);
   });
 
-  test('mapFiltersReducesCorrectly @linkedList @map @filter @reduce', () => {
-    const list = new LinkedList<number>();
+  test('forEachReverseIteratesCorrectly @doublyLinkedList @forEachReverse', () => {
+    const list = new DoublyLinkedList<number>();
+    list.add(1);
+    list.add(2);
+    list.add(3);
+
+    const result: number[] = [];
+    list.forEachReverse((value, index) => result.push(value + index));
+
+    expect(result).toEqual([5, 3, 1]); // index starts from size-1
+  });
+
+  test('mapFiltersReducesCorrectly @doublyLinkedList @map @filter @reduce', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.add(2);
     list.add(3);
@@ -112,8 +124,8 @@ describe('LinkedList', () => {
     expect(reduced).toBe(6);
   });
 
-  test('clearEmptiesTheList @linkedList @clear', () => {
-    const list = new LinkedList<number>();
+  test('clearEmptiesTheList @doublyLinkedList @clear', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(1);
     list.add(2);
     list.clear();
@@ -122,8 +134,8 @@ describe('LinkedList', () => {
     expect(() => list.get(0)).toThrow(RangeError);
   });
 
-  test('toArrayReturnsCorrectArray @linkedList @toArray', () => {
-    const list = new LinkedList<number>();
+  test('toArrayReturnsCorrectArray @doublyLinkedList @toArray', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(5);
     list.add(10);
     list.add(15);
@@ -131,8 +143,8 @@ describe('LinkedList', () => {
     expect(list.toArray()).toEqual([5, 10, 15]);
   });
 
-  test('edgeCaseSingleElement @linkedList @edgeCase', () => {
-    const list = new LinkedList<number>();
+  test('edgeCaseSingleElement @doublyLinkedList @edgeCase', () => {
+    const list = new DoublyLinkedList<number>();
     list.add(42);
 
     expect(list.get(0)).toBe(42);
@@ -144,8 +156,8 @@ describe('LinkedList', () => {
     expect(() => list.get(0)).toThrow(RangeError);
   });
 
-  test('edgeCaseEmptyList @linkedList @edgeCase', () => {
-    const list = new LinkedList<number>();
+  test('edgeCaseEmptyList @doublyLinkedList @edgeCase', () => {
+    const list = new DoublyLinkedList<number>();
     expect(list.size).toBe(0);
     expect(list.contains(1)).toBe(false);
     expect(list.indexOf(1)).toBe(-1);
