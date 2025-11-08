@@ -1,21 +1,77 @@
 # Paths & Loops 🤖
 
-**Paths & Loops** is a curated collection of algorithms and data structures with a QA and automation perspective. Implemented in **TypeScript**, this repository focuses on problem-solving patterns and techniques that are directly relevant to **testing, automation, and building scalable systems**.
+Welcome to this curated DSA repository, designed not only to showcase classical Data Structures and Algorithms but also to demonstrate a QA/Automation/SDET approach to validating, testing, and benchmarking them.
 
-It is designed to demonstrate how algorithmic thinking can improve **test design, automation workflows, and system reliability**, bridging the gap between computer science fundamentals and practical SDET work.
+Whether you’re preparing for coding interviews, learning algorithms, or demonstrating SDET skills, this repository combines robust algorithm implementations, data structures, and automated testing best practices in TypeScript.
 
----
+⸻
 
-## 🚀 Motivation
+📂 Repository Structure
 
-As a Software Development Engineer in Test (SDET), solving problems efficiently and understanding data structures is essential for:
+```
+src/
+├── algorithms/ # Classic algorithms
+│ ├── dynamic-programming/
+│ ├── graph/
+│ ├── searching/
+│ ├── sorting/
+│ └── string/
+├── data-structures/ # Core DS implementations
+│ ├── dictionary/
+│ ├── graph/
+│ ├── linear/
+│ ├── linked-list/
+│ ├── set/
+│ └── tree/
+└── utils/ # Helper utilities
+test/ # Automated unit tests with Jest
+```
 
--   Building scalable test frameworks
--   Optimizing CI/CD pipelines
--   Automating complex workflows
--   Designing robust test data generators
--   Analyzing and monitoring system metrics
+⸻
 
-This repo is both a **learning resource** and a **portfolio showcase** of practical algorithmic thinking applied to real-world QA and automation challenges.
+## Features
 
----
+Algorithms
+
+- Sorting: Bubble, Quick, Merge, Heap, Counting, Radix, Bucket, Selection, Insertion
+- Searching: Linear Search, Binary Search - Graph Algorithms: Dijkstra, Bellman-Ford, Floyd-Warshall, A\*, Kruskal, Prim, Topological Sort, Kosaraju, Tarjan
+- Dynamic Programming: Fibonacci, Climbing Stairs, LCS, LIS, 0/1 Knapsack, Coin Change, Edit Distance, Matrix Chain Multiplication, Subset Sum
+- String Algorithms / Pattern Matching: KMP, Rabin-Karp, Z-Algorithm, Naive Substring Search
+
+Data Structures
+
+- Linear Structures: Dynamic Array, Stack, Queue
+- Linked Lists: Singly & Doubly Linked List
+- Trees: BST, AVL, Red-Black, Heap
+- Graphs: Directed & Undirected Graph implementations
+- Sets & Maps: HashMap, Union-Find, Bloom Filter
+
+⸻
+
+## 🧪 QA / SDET Twist
+
+• Automated Unit Tests: Each algorithm and data structure comes with extensive test coverage.
+• Edge Case Handling: Empty inputs, large datasets, and boundary cases are tested.
+• Benchmarking & Validation: Utilities for measuring algorithm performance and validating correctness.
+• Test Case Generators: Randomized input generators for stress testing algorithms.
+• CI/CD Integration Ready: Designed to be easily integrated into GitHub Actions or any CI/CD pipeline.
+
+The goal is to merge classic DSA knowledge with modern QA practices, showcasing not only how algorithms work but also how to validate, automate, and benchmark them.
+
+⸻
+
+### 🚀 Getting Started
+
+````
+git clone <repo-url>
+cd <repo>
+npm install
+npm test
+```
+
+⸻
+
+📝 Contributing 1. Fork the repository 2. Create a new branch for your feature/algorithm 3. Add your implementation in src/algorithms or src/data-structures 4. Write corresponding tests in the test/ folder 5. Submit a pull request
+
+⸻
+````
