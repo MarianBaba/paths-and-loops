@@ -1,5 +1,10 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
 ![License](https://img.shields.io/github/license/MarianBaba/paths-and-loops)
+[![codecov](https://codecov.io/gh/MarianBaba/paths-and-loops/branch/main/graph/badge.svg)](https://codecov.io/gh/MarianBaba/paths-and-loops)
+![Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg?)
+![Node](https://img.shields.io/badge/node-18.x-green)
+![eslint](https://img.shields.io/badge/linted%20by-eslint-blue)
+![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
 # Paths & Loops 🤖
 

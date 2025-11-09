@@ -5,6 +5,8 @@
   "scripts": {
     "test": "jest",
     "test:tag": "jest --testNamePattern",
+    "test:coverage": "jest --coverage",
+    "coverage:check": "jest --coverage --coverageThreshold='{\"global\": {\"branches\": 80, \"functions\": 80, \"lines\": 85, \"statements\": 85}}'",
     "prepare": "husky",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "test:allure": "npm run test && allure serve allure-results"

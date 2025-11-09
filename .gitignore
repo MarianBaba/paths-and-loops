@@ -4,3 +4,5 @@ dist/
 *.log
 allure-report/
 allure-results/
+.env.local
+coverage
