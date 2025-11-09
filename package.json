@@ -6,7 +6,8 @@
     "test": "jest",
     "test:tag": "jest --testNamePattern",
     "prepare": "husky",
-    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test:allure": "npm run test && allure serve allure-results"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
     "@types/node": "^24.10.0",
     "@typescript-eslint/eslint-plugin": "^8.46.3",
     "@typescript-eslint/parser": "^8.46.3",
+    "allure-commandline": "^2.34.1",
+    "allure-jest": "^3.4.2",
     "benchmark": "^2.1.4",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
@@ -39,6 +42,9 @@
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "jest": "^30.2.0",
+    "jest-allure": "^0.1.3",
+    "jest-allure2": "^1.2.3",
+    "jest-environment-node": "^30.2.0",
     "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
     "ts-jest": "^29.4.5",
@@ -51,6 +57,8 @@
   "dependencies": {
     "chalk": "^5.6.2",
     "dotenv": "^17.2.3",
+    "jest-circus": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "jiti": "^2.6.1",
     "log-symbols": "^7.0.1",
     "ora": "^9.0.0"

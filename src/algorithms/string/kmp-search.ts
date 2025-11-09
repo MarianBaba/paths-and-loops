@@ -1,6 +1,7 @@
 export function kmpSearch(text: string, pattern: string): number[] {
   const n = text.length,
     m = pattern.length;
+  if (m === 0) return []; // <-- add this guard
   const lps = Array(m).fill(0);
   const result: number[] = [];
 
