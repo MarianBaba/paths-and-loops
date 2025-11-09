@@ -10,6 +10,56 @@
 
 Welcome to this curated DSA repository, designed not only to showcase classical Data Structures and Algorithms but also to demonstrate a QA/Automation/SDET approach to validating, testing, and benchmarking them.
 
+---
+
+## 🔹 Features
+
+### Algorithms
+
+- **Sorting**: `Bubble`, `Quick`, `Merge`, `Heap`, `Counting`, `Radix`, `Bucket`, `Selection`, `Insertion`
+- **Searching**: `Linear Search`, `Binary Search`
+- **Graph**: `Dijkstra`, `Bellman-Ford`, `Floyd-Warshall`, `A*`, `Kruskal`, `Prim`, `Topological Sort`, `Kosaraju`, `Tarjan`
+- **Dynamic Programming**: `Fibonacci`, `Climbing Stairs`, `LCS`, `LIS`, `0/1 Knapsack`, `Coin Change`, `Edit Distance`, `Matrix Chain Multiplication`, `Subset Sum`
+- **Strings / Pattern Matching**: `KMP`, `Rabin-Karp`, `Z-Algorithm`, `Naive Substring Search`
+
+### Data Structures
+
+- **Linear Structures**: `Dynamic Array`, `Stack`, `Queue`
+- **Linked Lists**: `Singly Linked List`, `Doubly Linked List`
+- **Trees**: `BST`, `AVL`, `Red-Black`, `Heap`
+- **Graphs**: `Directed Graph`, `Undirected Graph`
+- **Sets & Maps**: `HashMap`, `Union-Find`, `Bloom Filter`
+
+---
+
+## 🧪 QA / SDET Focus
+
+This repo emphasizes **software quality and validation** alongside algorithmic implementation:
+
+- **Automated Unit Tests**: Fully tested using Jest.
+- **Code Coverage & Reporting**: Integrated with Codecov.
+- **Benchmarking**: Performance measurement for algorithms and data structures using deterministic test generators.
+- **Stress Testing**: Randomized input generators for edge cases and large datasets.
+- **CI/CD Ready**: Compatible with GitHub Actions or other CI/CD pipelines for automated testing, benchmarking, and reporting.
+
+---
+
+## Getting Started
+
+```bash
+git clone https://github.com/MarianBaba/paths-and-loops.git
+
+cd paths-and-loops
+
+npm ci
+
+npm run test
+```
+
+- Check `package.json` for all the scripts you can run
+
+---
+
 📂 Repository Structure
 
 ```
@@ -163,50 +213,4 @@ Welcome to this curated DSA repository, designed not only to showcase classical 
 │           ├── heap.spec.ts
 │           └── rbt.spec.ts
 └── tsconfig.json
-```
-
----
-
-## 🔹 Features
-
-### Algorithms
-
-- **Sorting**: Bubble, Quick, Merge, Heap, Counting, Radix, Bucket, Selection, Insertion
-- **Searching**: Linear Search, Binary Search
-- **Graph**: Dijkstra, Bellman-Ford, Floyd-Warshall, A\*, Kruskal, Prim, Topological Sort, Kosaraju, Tarjan
-- **Dynamic Programming**: Fibonacci, Climbing Stairs, LCS, LIS, 0/1 Knapsack, Coin Change, Edit Distance, Matrix Chain Multiplication, Subset Sum
-- **Strings / Pattern Matching**: KMP, Rabin-Karp, Z-Algorithm, Naive Substring Search
-
-### Data Structures
-
-- **Linear Structures**: Dynamic Array, Stack, Queue
-- **Linked Lists**: Singly & Doubly Linked List
-- **Trees**: BST, AVL, Red-Black, Heap
-- **Graphs**: Directed & Undirected Graph implementations
-- **Sets & Maps**: HashMap, Union-Find, Bloom Filter
-
----
-
-## 🧪 QA / SDET Focus
-
-This repo emphasizes **software quality and validation** alongside algorithmic implementation:
-
-- **Automated Unit Tests**: Fully tested using Jest.
-- **Code Coverage & Reporting**: Integrated with Codecov.
-- **Benchmarking**: Performance measurement for algorithms and data structures using deterministic test generators.
-- **Stress Testing**: Randomized input generators for edge cases and large datasets.
-- **CI/CD Ready**: Compatible with GitHub Actions or other CI/CD pipelines for automated testing, benchmarking, and reporting.
-
----
-
-## Getting Started
-
-```bash
-git clone https://github.com/MarianBaba/paths-and-loops.git
-
-cd paths-and-loops
-
-npm ci
-
-npm run test
 ```
