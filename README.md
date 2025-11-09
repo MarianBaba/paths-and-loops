@@ -1,3 +1,6 @@
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![License](https://img.shields.io/github/license/MarianBaba/paths-and-loops)
+
 # Paths & Loops 🤖
 
 Welcome to this curated DSA repository, designed not only to showcase classical Data Structures and Algorithms but also to demonstrate a QA/Automation/SDET approach to validating, testing, and benchmarking them.
