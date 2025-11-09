@@ -1,4 +1,4 @@
-type BFEdge = { from: number; to: number; weight: number };
+export type BFEdge = { from: number; to: number; weight: number };
 
 export function bellmanFord(edges: BFEdge[], vertexCount: number, start: number): number[] | null {
   const dist = Array(vertexCount).fill(Infinity);
